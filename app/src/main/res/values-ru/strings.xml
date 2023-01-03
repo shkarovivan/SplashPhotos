@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">SplashPhotos</string>
+    <string name="default_text">Создавайте снимки, публикуйте, собирайте аудиторию, получайте фидбек!</string>
+    <string name="sign_in_button_text">Войти через Unsplash</string>
+    <string name="exit_app_text">Выйти из приложения</string>
+    <string name="positive_button_text">Да</string>
+    <string name="cancel_button_text">Отмена</string>
+    <string name="auth_canceled">Аутентификация не выполнена</string>
+    <string name="ribbon_fragment_name">Лента</string>
+    <string name="home_menu_item_title">Главная</string>
+    <string name="favorite_menu_item_title">Избранное</string>
+    <string name="profile_menu_item_title">Профиль</string>
+    <string name="ribbon_title">Лента</string>
+    <string name="collections_title">Коллекции</string>
+    <string name="photo_title">Фото</string>
+    <string name="tags_title">Теги:</string>
+    <string name="profile_title">Профиль</string>
+    <string name="menu_logout">Выход</string>
+    <string name="search_hint_text">Введите запрос</string>
+    <string name="more_button_text">Больше</string>
+    <string name="null_text">0</string>
+    <string name="error_text_default">Ошибка</string>
+    <string name="top_photos_text">Сегодня в топе</string>
+    <string name="collections_photos_directory_name">CollectionsPhotos</string>
+    <string name="collections_photos_profile_images_directory_name">CollectionsPhotosProfileImages</string>
+    <string name="collections_cover_photos_directory_name">CollectionsCoverPhotos</string>
+    <string name="collections_profile_images_directory_name">CollectionsProfileImages</string>
+    <string name="photos_directory_name">UnsplashPhotos</string>
+    <string name="profile_images_directory_name">ProfileImages</string>
+    <string name="error_not_mount_ex_storage">Отсуствует карта памяти</string>
+    <string name="memory_data_loaded_text">Ошибка сети: Данные загружены из памяти</string>
+    <string name="data_loading_error_text">Ошибка загрузки данных</string>
+    <string name="total_downloaded_default_text">(0)</string>
+    <string name="download_text"><u>Загрузить</u></string>
+    <string name="camera_made_text">Сделано с: </string>
+    <string name="camera_model_text">Модель: </string>
+    <string name="camera_exposure_text">Экспозиция: </string>
+    <string name="camera_aperture_text">Диафрагма: </string>
+    <string name="camera_focal_length_text">Фок.длина: </string>
+    <string name="camera_iso_text">ISO: </string>
+    <string name="about_text">Об авторе:  </string>
+    <string name="no_location_text">Нет локации</string>
+    <string name="no_tags_text">Нет тегов</string>
+    <string name="update_text">Обновить</string>
+    <string name="save_photo_error_text">Фото не загружено</string>
+    <string name="photo_extension">.jpg</string>
+    <string name="photo_load_success">Фото загружено успешно</string>
+    <string name="photo_is_loading">Фото загружается</string>
+    <string name="open_text">Открыть</string>
+    <string name="close_text">Закрыть</string>
+    <string name="network_error_download_text">Ошибка сети: загрузка продолжится позже</string>
+    <string name="network_error_text">Ошибка сети</string>
+    <string name="share_photo_intent_text">Открыть фото</string>
+    <string name="share_base_url">https://unsplash.com/photos/</string>
+    <string name="share_link_text">Поделиться ссылкой на фото</string>
+    <string name="photos_text">ФОТОГРАФИЙ</string>
+    <string name="searching_results_text">Результаты поиска: </string>
+    <string name="profile_photos_text">фотографии</string>
+    <string name="profile_liked_text">понравилось</string>
+    <string name="profile_collections_text">коллекции</string>
+    <string name="logout_text">Вы действительно хотите выйти. Все локальные данные будут удалены</string>
+    <string name="no_text">Нет</string>
+    <string name="yes_text">Да</string>
+
+    <string-array name="start_page_text">
+        <item>Создавайте снимки, публикуйте, собирайте аудиторию, получайте фидбек!</item>
+        <item>Делитесь с друзьями, собирайте коллекции</item>
+        <item>Загружайте любимые снимки и отслеживайе статистику</item>
+    </string-array>
+</resources>

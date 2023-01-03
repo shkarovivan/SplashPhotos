@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fragmentRibbonPhotos"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home_menu_item_title"/>
+    <item
+        android:id="@+id/collectionsFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_favorite"
+        android:title="@string/favorite_menu_item_title"/>
+    <item
+        android:id="@+id/profileFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/profile_menu_item_title"/>
+</menu>

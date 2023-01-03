@@ -1,0 +1,59 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.UnspalshSkillbox" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Theme.Material3.Dark.NoActionBar-->
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" >@color/lime</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <!-- Customize your theme here. -->
+        <item name="actionBarTheme">@style/ToolBarStyle</item>
+        <item name="snackbarStyle">@style/AppTheme.Snackbar_style</item>
+        <item name="snackbarTextViewStyle">@style/AppTheme.SnackbarTextViewTheme</item>
+        <item name="snackbarButtonStyle">@style/AppTheme.SnackbarTextButtonTheme</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/grey</item>
+        <item name="android:textColorHint">@color/light_grey</item>
+    </style>
+
+    <style name="ToolBarStyle">
+        <item name="android:background">@color/lime</item>
+        <item name="android:theme">@style/AppTheme.AppBarOverlay</item>
+        <item name="android:elevation">8dp</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+    <style name="CustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="progressBarLime" parent="@style/Theme.AppCompat">
+        <item name="colorAccent">@color/lime</item>
+    </style>
+
+    <style name="AppTheme.Snackbar_style" parent="@style/Widget.MaterialComponents.Snackbar">
+        <!-- using backgroundTint the alpha layer is ignored -->
+        <item name="backgroundTint">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="AppTheme.SnackbarTextViewTheme" parent="@style/Widget.MaterialComponents.Snackbar.TextView">
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:alpha">1.0</item>
+    </style>
+
+    <style name="AppTheme.SnackbarTextButtonTheme" parent="@style/Widget.MaterialComponents.Button.TextButton.Snackbar">
+        <item name="backgroundTint">?attr/colorOnPrimary</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+
+</resources>

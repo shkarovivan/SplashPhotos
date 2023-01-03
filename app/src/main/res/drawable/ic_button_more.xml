@@ -1,0 +1,19 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="41dp"
+    android:height="41dp"
+    android:viewportWidth="41"
+    android:viewportHeight="41">
+  <group>
+    <clip-path
+        android:pathData="M13,20H25.17L19.58,14.41L21,13L29,21L21,29L19.59,27.59L25.17,22H13V20Z"/>
+    <path
+        android:pathData="M1,1h40v40h-40z"
+        android:fillColor="@color/start_page_button_color" />
+  </group>
+  <path
+      android:pathData="M20.5,20.5m-19.5,0a19.5,19.5 0,1 1,39 0a19.5,19.5 0,1 1,-39 0"
+      android:strokeWidth="2"
+      android:fillColor="#00000000"
+      android:strokeColor="@color/design_default_color_on_secondary"/>
+</vector>
+

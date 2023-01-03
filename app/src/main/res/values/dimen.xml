@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_main">8dp</dimen>
+    <dimen name="margin_2x">16dp</dimen>
+    <dimen name="margin_3x">24dp</dimen>
+    <dimen name="percent_50">0.5</dimen>
+    <dimen name="icon_size">32dp</dimen>
+    <dimen name="ellipse_percent_top_15">0.15</dimen>
+    <dimen name="ellipse_percent_top_60">0.6</dimen>
+    <dimen name="ellipse_percent_half">0.5</dimen>
+    <dimen name="ellipse_percent_left">-0.2</dimen>
+    <dimen name="ellipse_percent_right">1.2</dimen>
+    <dimen name="header1_text_size">32sp</dimen>
+    <dimen name="header2_text_size">24sp</dimen>
+    <dimen name="normal_text_size">16sp</dimen>
+    <dimen name="author_avatar_image_size">30dp</dimen>
+    <dimen name="load_photo_button_size">30dp</dimen>
+    <dimen name="author_avatar_image_size2">40dp</dimen>
+    <dimen name="user_avatar_image_size">120dp</dimen>
+    <dimen name="small_text_size">12sp</dimen>
+    <dimen name="app_action_bar_size">40dp</dimen>
+    <integer name="photo_radius">30</integer>
+
+</resources>

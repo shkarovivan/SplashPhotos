@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            style="@style/ToolBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_action_bar_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:title="@string/photo_title"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/detailPhotoViews"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_main"
+        android:layout_marginBottom="@dimen/margin_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:id="@+id/errorString"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_main"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ProgressBar
+                android:id="@+id/loadBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/updateButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_2x"
+                android:text="@string/update_text"
+                android:textSize="@dimen/header2_text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/errorString" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/errorGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="errorString,updateButton" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/photoImageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_2x"
+                android:layout_marginTop="@dimen/margin_2x"
+                android:layout_marginEnd="@dimen/margin_2x"
+                android:layout_marginBottom="@dimen/margin_2x"
+                app:layout_constraintBottom_toTopOf="@+id/locationIconImage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/photoImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/likesNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_main"
+                    android:layout_marginStart="@dimen/margin_main"
+                    android:text="@string/null_text"
+
+                    android:textColor="@color/photo_info_text_color"
+                    android:textSize="@dimen/normal_text_size"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/photoImage"
+                    app:layout_constraintEnd_toStartOf="@+id/likedImage"
+                    app:layout_constraintTop_toTopOf="@+id/likedImage" />
+
+                <ImageView
+                    android:id="@+id/authorAvatarImage"
+                    android:layout_width="@dimen/author_avatar_image_size2"
+                    android:layout_height="@dimen/author_avatar_image_size2"
+                    android:layout_margin="@dimen/margin_main"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="@+id/photoImage"
+                    app:layout_constraintStart_toStartOf="@+id/photoImage"
+                    tools:ignore="ContentDescription"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                <TextView
+                    android:id="@+id/authorName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_main"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/photo_info_text_color"
+                    android:textSize="@dimen/normal_text_size"
+                    app:layout_constraintBottom_toTopOf="@id/authorLink"
+                    app:layout_constraintEnd_toStartOf="@+id/likesNumber"
+                    app:layout_constraintStart_toEndOf="@+id/authorAvatarImage"
+                    tools:text="@tools:sample/full_names" />
+
+                <TextView
+                    android:id="@+id/authorLink"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_main"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/photo_info_text_color"
+                    android:textSize="@dimen/normal_text_size"
+                    app:layout_constraintBottom_toBottomOf="@+id/photoImage"
+                    app:layout_constraintEnd_toStartOf="@+id/likesNumber"
+                    app:layout_constraintStart_toEndOf="@+id/authorAvatarImage"
+                    tools:text="@tools:sample/full_names" />
+
+                <ImageView
+                    android:id="@+id/likedImage"
+                    android:layout_width="@dimen/author_avatar_image_size2"
+                    android:layout_height="@dimen/author_avatar_image_size2"
+                    android:layout_margin="@dimen/margin_main"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="@+id/photoImage"
+                    app:layout_constraintEnd_toEndOf="@+id/photoImageLayout"
+                    app:srcCompat="@drawable/ic_liked_bar"
+                    tools:ignore="ContentDescription" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/downloadImage"
+                android:layout_width="@dimen/load_photo_button_size"
+                android:layout_height="@dimen/load_photo_button_size"
+                android:layout_margin="@dimen/margin_2x"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/ic_file_download"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/shareLink"
+                android:layout_width="@dimen/load_photo_button_size"
+                android:layout_height="@dimen/load_photo_button_size"
+                android:layout_margin="@dimen/margin_2x"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/ic_share"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/totalDownLoaded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_2x"
+                android:text="@string/total_downloaded_default_text"
+                android:textSize="@dimen/header2_text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/downloadImage" />
+
+            <TextView
+                android:id="@+id/downloadText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_2x"
+                android:text="@string/download_text"
+                android:textSize="@dimen/header2_text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/totalDownLoaded" />
+
+            <TextView
+                android:id="@+id/tagsText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_2x"
+                android:layout_marginBottom="16dp"
+                android:text="@string/download_text"
+                android:textAlignment="textStart"
+                android:textSize="@dimen/normal_text_size"
+
+                app:layout_constraintBottom_toTopOf="@id/infoLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineVerticalHalf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="@dimen/ellipse_percent_half" />
+
+            <LinearLayout
+                android:id="@+id/infoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@id/downloadText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/cameraInfoText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_2x"
+                    android:layout_weight="1"
+                    android:text="@string/download_text"
+                    android:textAlignment="textStart"
+                    android:textSize="@dimen/normal_text_size" />
+
+                <TextView
+                    android:id="@+id/userInfoText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_2x"
+                    android:layout_weight="1"
+                    android:text="@string/download_text"
+                    android:textAlignment="textStart"
+                    android:textSize="@dimen/normal_text_size" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/locationIconImage"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_margin="@dimen/margin_2x"
+                app:layout_constraintBottom_toTopOf="@+id/tagsText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/ic_location"
+                tools:ignore="ContentDescription" />
+
+
+            <TextView
+                android:id="@+id/locationText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_2x"
+                android:text="@string/download_text"
+                android:textAlignment="textStart"
+                android:textSize="@dimen/normal_text_size"
+                app:layout_constraintBottom_toBottomOf="@+id/locationIconImage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/locationIconImage"
+                app:layout_constraintTop_toTopOf="@+id/locationIconImage" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/allDetailViews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="locationIconImage,locationText,photoImageLayout,downloadImage,totalDownLoaded,downloadText,tagsText,guidelineVerticalHalf,infoLayout,shareLink" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

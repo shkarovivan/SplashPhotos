@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/drawable-v24/ic_button.xml" value="0.1995" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/drawable-v24/ic_button_more_pressed.xml" value="0.292" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/drawable-v24/ic_button_right.xml" value="0.292" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/drawable-v24/ic_search.xml" value="0.25" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/drawable/ic_button_more.xml" value="0.141" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/drawable/ic_button_more_pressed.xml" value="0.292" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/drawable/ic_ellipse.xml" value="0.292" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/drawable/ic_favorite.xml" value="0.333" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/drawable/ic_home.xml" value="0.333" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/drawable/ic_like.xml" value="0.2605" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/drawable/ic_liked.xml" value="0.2615" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/drawable/ic_not_liked.xml" value="0.2615" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/drawable/ic_profile.xml" value="0.333" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/drawable/ic_unsplash_logo.xml" value="0.333" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/drawable/rectangle.xml" value="0.292" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/layout-v28/fragment_start_page.xml" value="0.28802083333333334" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/layout/fragment_detail_photo.xml" value="0.196875" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/layout/fragment_favorite.xml" value="0.22" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/layout/fragment_ribbon_photos.xml" value="0.25" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/layout/fragment_sign_in.xml" value="0.25" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/layout/fragment_start_page.xml" value="0.33" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/layout/fragment_start_page_1.xml" value="0.25" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/layout/item_linear_image.xml" value="0.25625" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/layout/item_photo.xml" value="0.33" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/layout/rectangle.xml" value="0.3578125" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/layout/ribbon_photos_fragment.xml" value="0.2869791666666667" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/menu-v26/menu_toolbar.xml" value="0.24427083333333333" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.27890625" />
+        <entry key="..\:/SkillBox/diplom_android_lvl1/unsplash_skillbox/app/src/main/res/menu/menu_toolbar.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

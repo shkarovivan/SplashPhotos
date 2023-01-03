@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/startPageFragment">
+
+    <fragment
+        android:id="@+id/startPageFragment"
+        android:name="com.shkarov.splashphotos.onboarding.StartPageFragment"
+        android:label="StartPageFragment"
+        tools:layout="@layout/fragment_start_page">
+        <action
+            android:id="@+id/action_startPageFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.shkarov.splashphotos.sign_in.SignInFragment"
+        android:label="SignInFragment"
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/action_signInFragment_to_fragmentRibbonPhotos"
+            app:destination="@id/fragmentRibbonPhotos" />
+        <action
+            android:id="@+id/action_signInFragment_to_detailPhotoFragment"
+            app:destination="@id/detailPhotoFragment"
+            app:popUpToInclusive="true" />
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="https://unsplash.com/photos/{detailPhotoId}" />
+        <argument
+            android:name="detailPhotoId"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentRibbonPhotos"
+        android:name="com.shkarov.splashphotos.ribbon.RibbonPhotosFragment"
+        android:label="FragmentRibbonPhotos"
+        tools:layout="@layout/fragment_ribbon_photos">
+        <action
+            android:id="@+id/action_fragmentRibbonPhotos_to_detailPhoto"
+            app:destination="@id/detailPhotoFragment"
+            app:popUpTo="@id/fragmentRibbonPhotos" />
+        <action
+            android:id="@+id/action_fragmentRibbonPhotos_to_searchPhotosFragment"
+            app:destination="@id/searchPhotosFragment"
+            app:popUpTo="@id/fragmentRibbonPhotos" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.shkarov.splashphotos.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_collectionPhotosFragment"
+            app:destination="@id/collectionPhotosFragment"
+            app:popUpTo="@id/profileFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_detailPhotoFragment"
+            app:destination="@id/detailPhotoFragment"
+            app:popUpTo="@id/profileFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_profileFragment_to_logoutDialogFragment"
+            app:destination="@id/logoutDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/collectionsFragment"
+        android:name="com.shkarov.splashphotos.collections.CollectionsFragment"
+        android:label="FavoriteFragment"
+        tools:layout="@layout/item_collection">
+        <action
+            android:id="@+id/action_collectionsFragment_to_collectionPhotosFragment"
+            app:destination="@id/collectionPhotosFragment"
+            app:popUpTo="@id/collectionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailPhotoFragment"
+        android:name="com.shkarov.splashphotos.photo_detail_info.DetailPhotoFragment"
+        android:label="DetailPhoto"
+        tools:layout="@layout/fragment_detail_photo">
+        <argument
+            android:name="detailPhotoId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/collectionPhotosFragment"
+        android:name="com.shkarov.splashphotos.collection_photos.CollectionPhotosFragment"
+        android:label="CollectionPhotosFragment"
+        tools:layout="@layout/fragment_collection_photos">
+        <argument
+            android:name="collectionID"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_collectionPhotosFragment_to_detailPhotoFragment"
+            app:destination="@id/detailPhotoFragment"
+            app:popUpTo="@id/collectionPhotosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchPhotosFragment"
+        android:name="com.shkarov.splashphotos.search_photos.SearchPhotosFragment"
+        android:label="SearchPhotosFragment"
+        tools:layout="@layout/fragment_search_photos">
+        <argument
+            android:name="query"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_searchPhotosFragment_to_detailPhotoFragment"
+            app:destination="@id/detailPhotoFragment"
+            app:popUpTo="@id/searchPhotosFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/logoutDialogFragment"
+        android:name="com.shkarov.splashphotos.profile.LogoutDialogFragment"
+        android:label="LogoutDialogFragment"
+        tools:layout="@layout/fragment_logout"/>
+    <fragment
+        android:id="@+id/fragmentUserPhotos"
+        android:name="com.shkarov.splashphotos.profile.user_photos.UserPhotosFragment"
+        android:label="FragmentUserPhotos"
+        tools:layout="@layout/fragment_user_photos"/>
+    <fragment
+        android:id="@+id/fragmentUserLikedImages"
+        android:name="com.shkarov.splashphotos.profile.user_liked_images.UserLikedPhotosFragment"
+        android:label="FragmentUserLikedImages"
+        tools:layout="@layout/fragment_user_photos"/>
+    <fragment
+        android:id="@+id/fragmentUserCollections"
+        android:name="com.shkarov.splashphotos.profile.user_collections.UserCollectionsFragment"
+        android:label="FragmentUserCollections"
+        tools:layout="@layout/fragment_user_photos"/>
+</navigation>

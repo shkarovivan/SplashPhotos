@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">SplashPhotos</string>
+    <string name="default_text">Take pictures, post, build an audience, get feedback!</string>
+    <string name="sign_in_button_text">Login via Unsplash</string>
+    <string name="exit_app_text">Exit the application</string>
+    <string name="positive_button_text">Yes</string>
+    <string name="cancel_button_text">Cancel</string>
+    <string name="auth_canceled">Authentication failed</string>
+    <string name="ribbon_fragment_name">Ribbon</string>
+    <string name="home_menu_item_title">Home</string>
+    <string name="favorite_menu_item_title">Favorite</string>
+    <string name="profile_menu_item_title">Profile</string>
+    <string name="ribbon_title">Ribbon</string>
+    <string name="collections_title">Collections</string>
+    <string name="photo_title">Photo</string>
+    <string name="profile_title">Profile</string>
+    <string name="menu_logout">Logout</string>
+    <string name="search_hint_text">Enter a request</string>
+    <string name="more_button_text">More</string>
+    <string name="null_text">0</string>
+    <string name="error_text_default">Error</string>
+    <string name="top_photos_text">Top today</string>
+    <string name="collections_photos_directory_name">CollectionsPhotos</string>
+    <string name="collections_photos_profile_images_directory_name">CollectionsPhotosProfileImages</string>
+    <string name="collections_cover_photos_directory_name">CollectionsCoverPhotos</string>
+    <string name="collections_profile_images_directory_name">CollectionsProfileImages</string>
+    <string name="photos_directory_name">UnsplashPhotos</string>
+    <string name="profile_images_directory_name">ProfileImages</string>
+    <string name="error_not_mount_ex_storage">External storage not mount</string>
+    <string name="memory_data_loaded_text">Network error. Data loaded from memory</string>
+    <string name="data_loading_error_text">Data loading error</string>
+    <string name="total_downloaded_default_text">(0)</string>
+    <string name="download_text"><u>Download</u></string>
+    <string name="tags_title">Tags:</string>
+    <string name="camera_made_text">Made with: </string>
+    <string name="camera_model_text">Model: </string>
+    <string name="camera_exposure_text">Exposure: </string>
+    <string name="camera_aperture_text">Aperture: </string>
+    <string name="camera_focal_length_text">Focal Length: </string>
+    <string name="camera_iso_text">ISO: </string>
+    <string name="about_text">About </string>
+    <string name="no_location_text">No location</string>
+    <string name="no_tags_text">No tags</string>
+    <string name="update_text">Update</string>
+    <string name="save_photo_error_text">Photo not uploaded</string>
+    <string name="photo_extension">.jpg</string>
+    <string name="photo_load_success">Photo loaded successfully</string>
+    <string name="photo_is_loading">Photo is loading</string>
+    <string name="open_text">Open</string>
+    <string name="close_text">Close</string>
+    <string name="network_error_download_text">Network error: download will continue later</string>
+    <string name="network_error_text">Network error</string>
+    <string name="share_photo_intent_text">Open photo</string>
+    <string name="share_base_url">https://unsplash.com/photos/</string>
+    <string name="share_link_text">Share photo link</string>
+    <string name="photos_text">PHOTOS</string>
+    <string name="searching_results_text">Searching results: </string>
+    <string name="profile_photos_text">photos</string>
+    <string name="profile_liked_text">liked</string>
+    <string name="profile_collections_text">collections</string>
+    <string name="logout_text">Are you sure you want to logout? All local data will be deleted.</string>
+    <string name="no_text">No</string>
+    <string name="yes_text">Yes</string>
+
+    <string-array name="start_page_text">
+        <item>Take pictures, post, build an audience, get feedback!</item>
+        <item>Share with friends, collect collections</item>
+        <item>Upload your favorite snaps and track statistics</item>
+    </string-array>
+</resources>
